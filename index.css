@@ -313,4 +313,8 @@ select:hover {
     .modal-outro {
         width: 100%;
     }
+    
+    .menu-button-container {
+        width: 15%;
+    }
 }
