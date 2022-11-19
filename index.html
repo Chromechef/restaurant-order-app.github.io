@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="project-container" class="project-container">
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <label for="menu-options" id="menu-label" class="menu-label"></label>
+        </header>
+
+        <section class="flex flex-between background-image">
+            <main id="main" class="main-content-container"></main>
+            <section>
+                <div class="cart-div-width flex">
+                    <i id="open-cart-button" class="fa-solid fa-cart-shopping shopping-cart"></i>
+                    <p id="cart-ordered-amount">0</p>
+                </div>
+
+                <div class="select-container">
+                    <select name="menu-options" id="menu-options" class="menu-options-selection">
+                        <option value="Full-menu">Full Menu</option>
+                        <option value="Appetizer">Appetizer</option>
+                        <option value="Soup">Soup</option>
+                        <option value="Salad">Salad</option>
+                        <option value="Entree">Entree</option>
+                        <option value="Side">Side</option>
+                        <option value="Child">Child</option>
+                        <option value="Beverage">Beverage</option>
+                    </select>
+                </div>
+            </section>
+        </section>
+
+        <div id="modal" class="modal-continer">
+            <section id="modal-cart" class="modal-cart">
+                <button id="close-cart-modal-button">Return</button>
+                <button id="complete-order-button">Complete Order</button>
+                <h4 id="total-contents">$ 0</h4>
+                <div id="cart-contents"></div>
+            </section>
+            <section id="modal-payment-container" class="modal-payment">
+                <button id="close-payment-modal-button">Cancel</button>
+                <div id="modal-payment"></div>
+            </section>
+            <section id="modal-outro-container" class="modal-outro-container">
+                <h4>How would you rate this app?</h4>
+                <section class="rating">
+                    <i class="rating-star far fa-star"></i>
+                    <i class="rating-star far fa-star"></i>
+                    <i class="rating-star far fa-star"></i>
+                    <i class="rating-star far fa-star"></i>
+                    <i class="rating-star far fa-star"></i>
+                </section>
+                <button class="conirm-rating" id="confirm-rating">Confirm Rating</button>
+            </section>
+            <div class="modal-outro" id="modal-outro"></div>
+        </div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

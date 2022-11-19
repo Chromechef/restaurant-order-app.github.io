@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+
+}
+
+/* *** Typography *** */
+
+h1 {
+    color: white;
+    font-size: 5.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+h1,
+.menu-lebel {
+    text-shadow: 0 0 1rem black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+h3 span {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+.menu-label {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+/* *** Main Contents *** */
+
+.project-container {
+    max-width: 70rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+header {
+    width: 100%;
+    height: 18rem;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    background-image: url("images/Iceland-restaurant.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-label {
+    display: block;
+    margin: 1em 0;
+    color: black;
+    text-shadow: 0 0 2px white;
+}
+
+.main-content-container,
+.item-information {
+    width: 80%;
+}
+
+.recipe-container {
+    margin-top: .5rem;
+    padding: 1em;
+    border: .5rem double rgba(0, 0, 0, 0.322);
+    border-left: none;
+    border-radius: 0 2.5rem 2.5rem 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    backdrop-filter: blur(3px) sepia(90%);
+    color: white;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.background-menu-category {
+    background-color: rgba(92, 57, 6, 0.623);
+}
+
+.cart-div-width,
+.select-container {
+    width: 20%;
+    position: sticky;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.shopping-cart {
+    font-size: 4rem;
+    color: rgb(2, 177, 104);
+    background-color: #666;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.shopping-cart:hover {
+    cursor: pointer;
+    color: rgb(18, 250, 142);
+}
+
+.cart-div-width {
+    top: 30%;
+}
+
+.select-container {
+    top: 40%;
+}
+
+.background-image {
+    background-image: url("images/adele-payman-2oYMwuFgnTg-unsplash.png");
+    background-size: cover;
+    background-position: left;
+}
+
+.i-tag {
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: white;
+    border: 2px solid rgba(82, 41, 7, 0.678);
+    border-radius: 50%;
+    margin: 2px;
+    right: 0;
+}
+
+.i-tag:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .4s;
+    color: rgb(30, 255, 0);
+}
+
+.i-tag-minus:hover {
+    color: red;
+}
+
+.payment-form {
+    width: 60%;
+    margin: 0 auto;
+    gap: .3em;
+    text-align: center;
+}
+
+::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.menu-options-selection option,
+.menu-options-selection {
+    height: 3rem;
+    border-radius: .5rem;
+    margin: 0 1rem 0 0;
+    background-color: rgba(136, 81, 9, 0.877);
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* *** Common Classes *** */
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-even {
+    justify-content: space-evenly;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.block {
+    display: block;
+}
+
+/* *** modal and modal contents *** */
+
+.modal-cart,
+.modal-payment,
+.modal-outro-container,
+.modal-outro {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(105, 104, 105);
+    color: whitesmoke;
+    width: 60vw;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: 0px 0px 20px 1px #666;
+}
+
+.checkout-button-container {
+    display: flex;
+    gap: .5rem;
+}
+
+.checkout-button-container .i-tag {
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(100, 58, 7);
+    border: 2px solid rgba(0, 0, 0, 0.562);
+    border-radius: 50%;
+}
+
+.payment-form {
+    max-width: 20rem;
+}
+
+.payment-modal-content h2 {
+    font-size: 2.5rem;
+    margin: .5rem 0;
+}
+
+.payment-form i {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+}
+
+.pay-button,
+.confirm-rating {
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+
+.pay-button:hover,
+button:hover,
+select:hover {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+
+
+.rating {
+    width: 180px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.rating-star {
+    cursor: pointer;
+    color: blue;
+    margin-bottom: 2rem;
+}
+
+.active {
+    color: gold;
+}
+
+/* *** Media *** */
+
+@media (max-width:400px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    i {
+        font-size: 2rem;
+        border: none;
+    }
+}
